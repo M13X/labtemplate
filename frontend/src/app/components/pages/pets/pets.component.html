@@ -1,0 +1,27 @@
+  
+  <!-- <div class="container">
+  <p>
+    Welcome {{user}}!
+  </p>
+</div>  -->
+  
+  
+  
+  <p-dataTable [value]="pets"  selectionMode="single" [(selection)]="selectedPets" [contextMenu]="cm">
+      <p-column field="id" header="id"  [sortable]="true"></p-column>
+      <p-column field="Name" header="Name" [sortable]="true"></p-column>
+      <p-column field="Type" header="Type" [sortable]="true"></p-column>
+    </p-dataTable>
+
+<p-contextMenu #cm [model]="items"></p-contextMenu>
+
+ 
+
+
+
+    <br/>Name: {{pets[1].Name}}
+    <br/>Title: {{pets[1].Type}}
+
+
+
+
