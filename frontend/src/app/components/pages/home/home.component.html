@@ -1,8 +1,4 @@
-<!-- <div class="container">
-  <p>
-    Welcome {{user}}!
-  </p>
-</div> -->
+
 
     <p-dataTable [value]="users"  selectionMode="single" [(selection)]="selectedUser" [contextMenu]="cm">
       <p-column field="firstName" header="FirstName"  [sortable]="true"></p-column>
@@ -11,3 +7,5 @@
     </p-dataTable>
 
 <p-contextMenu #cm [model]="items"></p-contextMenu>
+
+<textarea [value]="users"></textarea>
